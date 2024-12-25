@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImmobiliéreDZ</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">
+            <img src="assets/logo.png" alt="ImmobiliéreDZ Logo">
+            <h1>ImmobiliéreDZ</h1>
+        </div>
+        <ul>
+            <li onclick="navigateTo('home')">🏠 Home</li>
+            <li onclick="navigateTo('about')">ℹ️ About Us</li>
+            <li onclick="navigateTo('contact')">📞 Contact</li>
+            <li onclick="togglePreferences()">⚙️ Preferences</li>
+            <li onclick="toggleSettings()">⚙️ Settings</li>
+        </ul>
+        <div id="preferences" class="dropdown">
+            <ul>
+                <li onclick="changeLanguage('ar')">Arabic</li>
+                <li onclick="changeLanguage('fr')">French</li>
+                <li onclick="changeLanguage('en')">English</li>
+            </ul>
+        </div>
+        <div id="settings" class="dropdown">
+            <ul>
+                <li>Setting 1</li>
+                <li>Setting 2</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Diaporama -->
+    <div class="diaporama">
+        <div class="overlay">
+            <h1>ImmobiliéreDZ</h1>
+            <p>Welcome to your dream home finder!</p>
+        </div>
+        <div class="slides">
+            <img src="assets/background/house1.jpg" alt="House 1">
+            <img src="assets/background/house2.jpg" alt="House 2">
+            <img src="assets/background/house3.jpg" alt="House 3">
+        </div>
+    </div>
+
+    <!-- Opportunities Section -->
+    <div class="opportunities">
+        <div class="left-panel">
+            <h2>Recent Rentals</h2>
+            <ul class="rental-list">
+                <li onclick="showRentalDetails('algiers1')">
+                    <img src="assets/houses/algiers1.jpg" alt="Villa in Algiers">
+                    <p>Villa in Algiers</p>
+                </li>
+                <li onclick="showRentalDetails('batna1')">
+                    <img src="assets/houses/batna1.jpg" alt="F3 Apartment in Batna">
+                    <p>F3 Apartment in Batna</p>
+                </li>
+                <li onclick="showRentalDetails('oran1')">
+                    <img src="assets/houses/oran1.jpg" alt="Villa in Oran">
+                    <p>Villa in Oran</p>
+                </li>
+            </ul>
+        </div>
+        <div class="right-panel">
+            <h2>Chat with us</h2>
+            <div class="chatbot">
+                <div class="chatbot-header">
+                    <p>Your Real Estate Chatbot</p>
+                </div>
+                <div class="chatbot-container">
+                    <button onclick="window.open('https://douaa20-mk.github.io/real_estate_/', '_blank')">
+                        open chatbot
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="about">
+        <h2>About Us</h2>
+        <p>We are a real estate agency committed to helping you find your dream home.</p>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="mailto:contact@immobiliereDZ.com">contact@immobiliereDZ.com</a></p>
+        <p>Phone: <a href="tel:+213123456789">+213 123 456 789</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ImmobiliéreDZ</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="logo">
+            <img src="assets/logo.png" alt="ImmobiliéreDZ Logo">
+            <h1>ImmobiliéreDZ</h1>
+        </div>
+        <ul>
+            <li onclick="navigateTo('home')">🏠 Home</li>
+            <li onclick="navigateTo('about')">ℹ️ About Us</li>
+            <li onclick="navigateTo('contact')">📞 Contact</li>
+            <li onclick="togglePreferences()">⚙️ Preferences</li>
+            <li onclick="toggleSettings()">⚙️ Settings</li>
+        </ul>
+        <div id="preferences" class="dropdown">
+            <ul>
+                <li onclick="changeLanguage('ar')">Arabic</li>
+                <li onclick="changeLanguage('fr')">French</li>
+                <li onclick="changeLanguage('en')">English</li>
+            </ul>
+        </div>
+        <div id="settings" class="dropdown">
+            <ul>
+                <li>Setting 1</li>
+                <li>Setting 2</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="about">
+        <h2>About Us</h2>
+        <p>Welcome to ImmobiliéreDZ, your trusted real estate agency dedicated to helping you find your dream home. Our team is committed to providing exceptional service and expert guidance throughout your real estate journey.</p>
+        
+        <h3>Our Mission</h3>
+        <p>At ImmobiliéreDZ, we strive to connect buyers and sellers in the real estate market, ensuring a seamless and satisfying experience for all parties involved.</p>
+
+        <h3>Meet Our Team</h3>
+        <ul>
+            <li>
+                <strong>Sarra Bekhouche</strong> - Co-Founder & Real Estate Expert
+                <p>Sarra has over 10 years of experience in the real estate industry and is passionate about helping clients find their perfect home.</p>
+            </li>
+            <li>
+                <strong>Mokhanfer Douaa</strong> - Co-Founder & Marketing Specialist
+                <p>Mokhanfer specializes in marketing strategies that effectively showcase properties and attract potential buyers.</p>
+            </li>
+        </ul>
+
+        <h3>Our Assistant</h3>
+        <p>Our AI assistant is here to help you with any questions you may have about our listings, the buying process, or anything else related to real estate. Feel free to chat with our assistant for instant support!</p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2023 ImmobiliéreDZ. All rights reserved.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
